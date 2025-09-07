@@ -1,0 +1,83 @@
+:root {
+    --bg-01: #2f3e46;
+    --bg-02: #354f52;
+    --bg-03: #52796f;
+
+    --fg-01: #cad2c5;
+    --fg-02: #84a98c;
+    --sp-01: 3rem;
+    --sp-02: 4rem;
+
+    font-size: 16px;
+    font-family: "Comic Relief";
+
+    background-color: var(--bg-01);
+    color: var(--fg-01);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.site-header {
+    width: 100%;
+    height: var(--sp-01);
+    background-color: var(--bg-02);
+
+    text-align: center;
+    align-items: center;
+    
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.site-header a:nth-child(1),
+.site-header a:nth-child(3) {
+    color: aqua;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+section:last-of-type {
+    height: 10rem;
+}
+
+section#hero {
+    display: flex;
+    gap: 2rem;
+}
+
+section#hero .content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+section#hero .hero-icon img {
+    width: 250px;
+    height: 250px;
+    min-width: 250px;
+    min-height: 250px;
+    border-radius: 50%;
+    border: var(--sp-01) solid var(--bg-02);
+    object-fit: cover;
+}
+section:nth-of-type(2),
+section:nth-of-type(4) {
+    background-color: var(--bg-02);
+}
